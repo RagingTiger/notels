@@ -1,5 +1,5 @@
 ## About
-The **notels** utility was developed as a compliment to the [notemk](https://github.com/RagingTiger/notels). It allows for quick and easy
+The **notels** utility was developed as a compliment to the [notemk](https://ragingtiger.github.io/notemk). It allows for quick and easy
 viewing of all your notes in order by most recent.
 
 ## Installation
@@ -36,7 +36,7 @@ alias notels=/path/to/your/repository/notels/notels.sh
 ```
 
 ## Usage
-Since **notels** is made to work with [notemk](https://github.com/RagingTiger/notels),
+Since **notels** is made to work with [notemk](https://ragingtiger.github.io/notemk/),
 when you run **notels** it will check to see if there is a `.notes/` directory.
 If one does exist, it will open all of the notes, in order of most recent, in
 a scrollable session. For example:
