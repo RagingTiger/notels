@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # globals
-note_dir=".notes/"
+note_dir="$PWD/.notes"
 
 # functions
 check_dir() {
@@ -16,7 +16,8 @@ check_dir() {
 list_note() {
   # check for notes
   if check_dir; then
-    cat .notes/$(ls "$note_dir" | sort -r) | less
+    escpath=$(echo "$note_dir" | sed 's/\//\\\//g')
+    cat $(ls $PWD/.notes | sort -r | sed "/^./s/^/$escpath\//") | less
   else
     echo ".notes/ local directory not found"
   fi
